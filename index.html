@@ -4,36 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Become a One-Person AI Powerhouse — Live Workshop</title>
-    <meta name="description" content="A 2-hour live workshop on Thursday, July 2. Walk out a one-person machine — more output, faster decisions, real leverage." />
+    <meta name="description" content="A 2-hour live workshop, Thursday July 2. Walk out a one-person machine — most people 5–10x their output." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
     <style>
-      html, body { margin: 0; background: #000; }
-      .wrap { width: min(100%, 480px); margin: 0 auto; position: relative; line-height: 0; }
-      .page { width: 100%; display: block; }
-      .claim {
-        position: absolute;
-        left: 8.5%;
-        top: 90.4%;
-        width: 83%;
-        height: 5.6%;
-        cursor: pointer;
-        border-radius: 6px;
-        background: transparent;
-        display: block;
+      :root {
+        --cyan: #00f2ff;
+        --font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        --display: "Druk Condensed", "Bebas Neue Pro", "Bebas Neue", "Impact", "Arial Narrow", sans-serif;
       }
-      .claim:focus-visible { outline: 2px solid #00f2ff; outline-offset: 2px; }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; background: #000; }
+      body { font-family: var(--font); }
+      .wrap { width: min(100%, 480px); margin: 0 auto; background: #000; }
+      .part { display: block; width: 100%; }
+
+      .inserted { background: #000; padding: 6px 2.3% 12px; }
+      .ibox { display: grid; grid-template-columns: 36px minmax(0,1fr); gap: 12px; align-items: start; border: 1px solid rgba(255,255,255,0.22); border-radius: 8px; background: rgba(255,255,255,0.04); padding: 13px 14px; margin: 0 0 11px; }
+      .iboxIco { width: 36px; height: 36px; border-radius: 999px; border: 1.5px solid var(--cyan); display: flex; align-items: center; justify-content: center; }
+      .iboxIco svg { width: 18px; height: 18px; stroke: var(--cyan); fill: none; stroke-width: 1.7; }
+      .iworth { background: linear-gradient(135deg, rgba(0,242,255,0.10), rgba(255,255,255,0.02)); border-color: rgba(0,242,255,0.45); }
+      .ihead { color: var(--cyan); font-family: var(--mono); font-size: 11px; font-weight: 900; letter-spacing: 0.22em; text-transform: uppercase; margin: 0 0 11px; }
+      .istats { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: center; gap: 6px; margin-bottom: 11px; }
+      .istat { text-align: center; }
+      .istat b { display: block; font-family: var(--display); font-size: 25px; line-height: 1; color: #f6fafb; letter-spacing: 0.01em; }
+      .istat b.hot { color: var(--cyan); }
+      .istat small { display: block; margin-top: 4px; color: rgba(246,250,251,0.6); font-size: 9.5px; line-height: 1.2; }
+      .iop { color: var(--cyan); font-size: 16px; font-weight: 700; }
+      .inote { margin: 0; color: rgba(246,250,251,0.78); font-size: 12px; line-height: 1.42; }
+      .ilist { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+      .ilist li { display: flex; gap: 8px; align-items: flex-start; color: rgba(246,250,251,0.85); font-size: 12.5px; line-height: 1.3; }
+      .ilist li::before { content: ""; flex: 0 0 auto; width: 5px; height: 5px; margin-top: 6px; border-radius: 999px; background: var(--cyan); box-shadow: 0 0 8px rgba(0,242,255,0.7); }
+
+      .bottom { position: relative; line-height: 0; }
+      .claim { position: absolute; left: 9%; top: 76.5%; width: 82%; height: 12%; cursor: pointer; border-radius: 6px; background: transparent; display: block; }
+      .claim:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
     </style>
   </head>
   <body>
     <main class="wrap">
-      <img class="page" src="signup_final.png" alt="Become a One-Person AI Powerhouse — paid live workshop, Thursday July 2, 12 PM PT / 3 PM ET, 2 hours, $300" />
-      <a class="claim" id="claim" href="#" rel="noopener" aria-label="Claim your seat — $300"></a>
+      <img class="part" src="part_top.png" alt="Become a One-Person AI Powerhouse — live workshop. Thursday July 2, 12 PM PT / 3 PM ET, 2 hours. What you'll learn, built for, the outcome." />
+
+      <section class="inserted">
+        <div class="ibox iworth">
+          <span class="iboxIco"><svg viewBox="0 0 24 24"><path d="M4 18l5-5 3 3 7-7M14 9h5v5"/></svg></span>
+          <div>
+            <div class="ihead">What it's worth</div>
+            <div class="istats">
+              <div class="istat"><b>~8 hrs</b><small>you today</small></div>
+              <div class="iop">+</div>
+              <div class="istat"><b>16 hrs</b><small>machine, in parallel</small></div>
+              <div class="iop">=</div>
+              <div class="istat"><b class="hot">5–10×</b><small>your output</small></div>
+            </div>
+            <p class="inote">Change how you think and the machine runs the other 16 hours in parallel. A few hundred dollars to 5–10x your output — the math isn't close.</p>
+          </div>
+        </div>
+
+        <div class="ibox">
+          <span class="iboxIco"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span>
+          <div>
+            <div class="ihead">What you walk away with</div>
+            <ul class="ilist">
+              <li>A clear human-vs-machine operating model — what only you touch, what the machine runs</li>
+              <li>A system that keeps producing while you sleep</li>
+              <li>The exact next-step plan to start on Monday</li>
+              <li>The full recording, yours to keep</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="bottom">
+        <img class="part" src="part_bottom.png" alt="Host: Athan Slotkin. Registration form. Claim your seat for $300." />
+        <a class="claim" id="claim" href="#" rel="noopener" aria-label="Claim your seat — $300"></a>
+      </div>
     </main>
+
     <script>
       var STRIPE_LINK = "";
       document.getElementById("claim").addEventListener("click", function (e) {
         e.preventDefault();
         if (STRIPE_LINK) { window.location.href = STRIPE_LINK; }
-        else { alert("Checkout is being connected — one moment. (Payment link goes live shortly.)"); }
+        else { alert("Checkout is being connected — one moment."); }
       });
     </script>
   </body>
